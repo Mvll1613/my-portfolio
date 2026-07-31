@@ -1,21 +1,26 @@
 <template>
-  <Header />
+  <VantaBackground>
+    <Header />
+    <Landing />
+  </VantaBackground>
 </template>
 
 <script setup lang="ts">
   import Header from './components/Header.vue';
+  import Landing from './components/sections/Landing.vue';
+  import VantaBackground from './components/VantaBackground.vue';
 </script>
 
 <style>
-  @import "tailwindcss";
   @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+  @import "tailwindcss";
   
   body {
     font-family: 'Alata', sans-serif;
   }
 
   .background-black {
-    background-color: #00171F;
+    background-color: rgba(0, 23, 31, 0.75);
   }
 
   .font-white {
