@@ -7,10 +7,30 @@
     >
 
     <nav class="flex gap-16 text-white">
-      <a href="#home" :class="['text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out', { 'text-blue-400': activeSection === 'home' }]">Home</a>
-      <a href="#about" class="text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out">About</a>
-      <a href="#projects" class="text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out">Projects</a>
-      <a href="#contact" class="text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out">Contact</a>
+      <a
+        href="#home"
+        :class="['text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out', { 'text-blue-400': activeSection === 'home' }]"
+      >
+        Home
+      </a>
+      <a
+        href="#about"
+        :class="['text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out', { 'text-blue-400': activeSection === 'about' }]"
+      >
+        About
+      </a>
+      <a
+        href="#projects"
+        :class="['text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out', { 'text-blue-400': activeSection === 'projects' }]"
+      >
+        Projects
+      </a>
+      <a
+        href="#contact"
+        :class="['text-2xl hover:text-blue-400 transition-colors duration-200 ease-in-out', { 'text-blue-400': activeSection === 'contact' }]"
+      >
+        Contact
+      </a>
     </nav>
   </header>
 </template>
@@ -29,7 +49,6 @@
       if (element) {
         const { offsetTop, offsetHeight } = element
         if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-          console.log(element)
           activeSection.value = section
           break
         }

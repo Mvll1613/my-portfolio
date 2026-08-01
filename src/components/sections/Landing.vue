@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="flex justify-between h-screen">
+  <section id="home" class="flex h-screen">
     <div class="flex w-full self-end justify-center gap-20">
       <div class="font-white max-w-150 pt-25">
         <p class="text-2xl mb-2">Hi, my name is</p>

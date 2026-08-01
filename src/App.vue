@@ -3,12 +3,14 @@
     <Header />
     <Landing />
   </VantaBackground>
+  <About />
 </template>
 
 <script setup lang="ts">
-  import Header from './components/Header.vue';
-  import Landing from './components/sections/Landing.vue';
-  import VantaBackground from './components/VantaBackground.vue';
+  import Header from './components/Header.vue'
+  import Landing from './components/sections/Landing.vue'
+  import VantaBackground from './components/VantaBackground.vue'
+  import About from './components/sections/About.vue'
 </script>
 
 <style>
@@ -25,5 +27,9 @@
 
   .font-white {
     color: #E2E2E2;
+  }
+  
+  .background-white {
+    background-color: rgba(226, 226, 226, 1);
   }
 </style>
